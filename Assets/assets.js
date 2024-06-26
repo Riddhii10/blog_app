@@ -33,7 +33,7 @@ export const blog_data = [{
     description:"Brazil stands out globally for several reasons. It is the largest exporter of coffee, producing over 3 million tons annually, with its balanced and nutty Arabica beans highly favored worldwide.",
     image:blog_pic_1,
     date: Date.now(),
-    category: "Lifestyle",
+    category:"Lifestyle",
     author: "Alex Bennett",
     author_img:profile_icon
 },
@@ -43,7 +43,7 @@ export const blog_data = [{
     description: "Spain is rich in cultural and historical heritage, boasting 45 UNESCO World Heritage Sites, including the Alhambra and Gaudí’s masterpieces. Spanish, spoken by over 580 million people, is the official language in 21 countries. As the largest producer of olive oil, Spain accounts for about 40% of global production.",
     image:blog_pic_2,
     date: Date.now(),
-    category: "Startup", 
+    category:"Startup", 
     author: "Alex Bennett",
     author_img:profile_icon
 }, 
@@ -53,7 +53,7 @@ export const blog_data = [{
     description: "Lorem Ipsum is simply dummy text of the printing and typese",
     image:blog_pic_3,
     date: Date.now(),
-    category: "Technology",
+    category:"Technology",
     author: "Alex Bennett",
     author_img:profile_icon
 },
@@ -63,7 +63,7 @@ export const blog_data = [{
     description: "Lorem Ipsum is simply dummy text of the printing and typeset\n",
     image: blog_pic_1,
     date: Date.now(),
-    category: "Technology",
+    category:"Technology",
     author: "Alex Bennett",
     author_img: profile_icon
   },
@@ -100,7 +100,7 @@ export const blog_data = [{
 {
     id:8, 
     title: "How to create an effective startup roadmap or ideas",
-    description: "Spain is rich in cultural and historical heritage, boasting 45 UNESCO World Heritage Sites, including the Alhambra and Gaudí’s masterpieces. Spanish, spoken by over 580 million people, is the official language in 21 countries. As the largest producer of olive oil, Spain accounts for about 40% of global production. The Sagrada Familia’s construction began in 1882 and continues today. Spain's love for football is evident with La Liga teams like Real Madrid and Barcelona. The tradition of siesta is still cherished, and tapas originated here. Spain hosts La Tomatina, the world's largest food fight, and the running of the bulls at Pamplona's San Fermín festival. Flamenco music and dance originated in Andalusia. Spain has the world's largest number of Blue Flag beaches and the oldest restaurant, Sobrino de Botín, established in 1725. Lastly, Spain recognizes four official languages: Spanish, Catalan, Galician, and Basque.",
+    description: "Spain is rich in cultural and historical heritage, ",
     image:blog_pic_2,
     date: Date.now(),
     category: "Startup", 
