@@ -42,7 +42,8 @@ const page = ({params}) => {
         </div>
     </div>
     <div className='mx-5 max-w-[800px] md:mx-auto mt-[-100px] mb-10'>
-        <Image src={data.image} width={1280} alt='' height={250} className='border-4 border-white mx-auto'/>
+
+        <Image src={data.image.replace(/[{}]/g,'')} width={1280} alt='' height={250} className='border-4 border-white mx-auto'/>
         {/* <h1 className='my-8 text-[26px] font-semibold'>Introduction</h1> */}
         {/* <p>{data.description}</p> */}
         <div className='blog-content' dangerouslySetInnerHTML={{__html:data.description}}>
