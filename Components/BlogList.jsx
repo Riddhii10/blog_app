@@ -7,6 +7,9 @@ const BlogList = () => {
     const [blogs,setBlogs]=useState([]);
     const fetchBlogs=async()=>{
         const response=await axios.get('/api/blog');
+
+        const blogsWithFullImagePath=response.data.blogs.map()
+        
         setBlogs(response.data.blogs);
         console.log(response.data.blogs);
     }
