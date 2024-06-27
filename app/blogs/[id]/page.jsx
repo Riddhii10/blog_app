@@ -23,7 +23,7 @@ const page = ({params}) => {
         })
         setData(response.data);
     }
-
+    
     useEffect(()=>{
         fetchBlogData();
     },[])

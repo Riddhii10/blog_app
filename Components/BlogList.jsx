@@ -18,6 +18,7 @@ const BlogList = () => {
           console.error('Error fetching blogs:', error);
         }
       };
+    
     useEffect(()=>{
         fetchBlogs();
     },[])

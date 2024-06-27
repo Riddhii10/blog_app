@@ -3,12 +3,14 @@ import {ConnectDB} from '@/lib/config/db';
 import { writeFile } from 'fs/promises';
 import { describe } from 'node:test';
 import BlogModel from '../../../lib/models/BlogModel';
+const fs=require('fs');
 // const BlogModel = require('../../../lib/models/BlogModel'); 
 const LoadDB=async()=>{
     await ConnectDB();
 }
 
 LoadDB();
+
 // api emdpoint to get all blogs 
 export async function GET(request){
     //console.log("Blog GET request chal raha hai . ")
@@ -54,3 +56,11 @@ export async function POST(request){
     return NextResponse.json({success:true,msg:"Blog Added."})
 }
 
+// delete api endpoint 
+export async function DELETE(request){
+    const id=await request.nextUrl.searchParams.get('id');
+    const blog=await BlogModel.findById(id);
+    fs.unlink(`./public${blog.image}`,()=>{});
+    await BlogModel.findByIdAndDelete(id);
+    return NextResponse.json({msg:"Blog Deleted successfully . "})
+}
