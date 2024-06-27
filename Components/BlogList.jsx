@@ -5,14 +5,19 @@ import axios from 'axios';
 const BlogList = () => {
     const [menu,setMenu]=useState("All");
     const [blogs,setBlogs]=useState([]);
-    const fetchBlogs=async()=>{
-        const response=await axios.get('/api/blog');
-
-        const blogsWithFullImagePath=response.data.blogs.map()
-        
-        setBlogs(response.data.blogs);
-        console.log(response.data.blogs);
-    }
+    const fetchBlogs = async () => {
+        try {
+          const response = await axios.get('/api/blog');
+          console.log('API Response:', response.data.blogs); // Log the API response
+          const blogsWithFullImagePath = response.data.blogs.map(blog => ({
+            ...blog,
+            image: `${blog.image}.replace(/[{}]/g, '')`, // Ensure the image path is correctly formatted
+          }));
+          setBlogs(blogsWithFullImagePath);
+        } catch (error) {
+          console.error('Error fetching blogs:', error);
+        }
+      };
     useEffect(()=>{
         fetchBlogs();
     },[])
