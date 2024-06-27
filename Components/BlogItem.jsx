@@ -6,7 +6,7 @@ const BlogItem = ({title,description,category,image,id}) => {
   return (
     <div className='max-w-[330px] sm:max-w-[300px] bg-white border border-black hover:shadow-[-7px_7px_0px_#000000]'>
         <Link href={`/blogs/${id}`}>
-        <Image src={image} alt='' width={300}  className='border-b border-black'/>
+        <Image src={image} alt='' width={300} height={300} className='border-b border-black'/>
         </Link>
         <p className='ml-5 mt-5 px-1 inline-block bg-black text-white text-sm'>{category}</p>
         <div className='p-5'>

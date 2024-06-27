@@ -1,6 +1,10 @@
 import blog_pic_1 from './brazil.png';
 import blog_pic_2 from './spain.jpeg';
 import blog_pic_3 from './usa.jpeg';
+import blog_pic_4 from './download.png';
+import blog_pic_5 from './download.jpeg';
+import blog_pic_6 from './download (1).jpeg';
+import blog_pic_7 from './download (2).jpeg';
 import facebook_icon from './fb.jpeg'
 import profile_icon from './profile.png'
 import instagram_icon from './ig.jpeg'
@@ -61,7 +65,7 @@ export const blog_data = [{
     id: 4,
     title: "Tips for getting the most out of apps and software",
     description: "Lorem Ipsum is simply dummy text of the printing and typeset\n",
-    image: blog_pic_1,
+    image: blog_pic_4,
     date: Date.now(),
     category:"Technology",
     author: "Alex Bennett",
@@ -71,7 +75,7 @@ export const blog_data = [{
     id: 5,
     title: "Enhancing your skills and capturing memorable moments",
     description: "Lorem Ipsum is simply dummy text of the printing and typeset\n",
-    image: blog_pic_2,
+    image: blog_pic_5,
     date: Date.now(),
     category: "Lifestyle",
     author: "Alex Bennett",
@@ -81,7 +85,7 @@ export const blog_data = [{
     id: 6,
     title: "Maximizing returns by minimizing resources in your startup",
     description: "Lorem Ipsum is simply dummy text of the printing and typeset\n",
-    image: blog_pic_3,
+    image: blog_pic_7,
     date: Date.now(),
     category: "Startup",
     author: "Alex Bennett",
@@ -91,7 +95,7 @@ export const blog_data = [{
     id:7,
     title: "10 LESSER KNOWN AND CAPTIVATING FACTS ABOUT BRAZIL",
     description:"Brazil stands out globally for several reasons. It is the largest exporter of coffee, producing over 3 million tons annually, with its balanced and nutty Arabica beans highly favored worldwide. Geographically, Brazil borders nearly every South American country except Chile and Ecuador, highlighting its strategic position on the continent. The country is a biodiversity hotspot, home to at least 15% of the world's species, including over 100,000 invertebrates and 800 bird species. .",
-    image:blog_pic_1,
+    image:blog_pic_6,
     date: Date.now(),
     category: "Lifestyle",
     author: "Alex Bennett",
