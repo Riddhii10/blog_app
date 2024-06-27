@@ -11,7 +11,7 @@ const BlogList = () => {
           console.log('API Response:', response.data.blogs); // Log the API response
           const blogsWithFullImagePath = response.data.blogs.map(blog => ({
             ...blog,
-            image: `${blog.image}.replace(/[{}]/g, '')`, // Ensure the image path is correctly formatted
+            image: `${blog.image}`.replace(/[{}]/g, ''), // Ensure the image path is correctly formatted
           }));
           setBlogs(blogsWithFullImagePath);
         } catch (error) {
