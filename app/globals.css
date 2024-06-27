@@ -9,3 +9,30 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+.blog-content{
+    padding: 36px 0;
+}
+.blog-content b{
+   font-weight: 500;
+    margin-bottom: 10px;
+}
+.blog-content p{
+    margin-bottom: 10px;
+ }
+ .blog-content h1{
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 26px;
+ }
+
+ .blog-content h1{
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 22px;
+ }
+
+ .blog-content h1{
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 18px;
+ }
