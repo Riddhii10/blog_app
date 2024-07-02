@@ -23,7 +23,7 @@ const BlogList = () => {
         fetchBlogs();
     },[])
   return (
-    <div>
+    <div data-testid="blog-list">
         <div className ='flex justify-center gap-6 my-10'>
             <button onClick={()=>setMenu('All')} className={menu==="All"?'bg-black text-white py-1 px-4 rounded-sm':""}>All</button>
             <button onClick={()=>setMenu('Technology')} className={menu==="Technology"?'bg-black text-white py-1 px-4 rounded-sm':""}>Technology</button>
