@@ -7,9 +7,9 @@ const Footer = () => {
         <Image src={assets.logo_light} alt='' width={120} className='rounded-sm'/>
         <p className='text-base text-white'>All rights reserved. Copyright @travelKaro</p>
         <div className='flex gap-2' >
-            <Image src={assets.facebook_icon} width={50} className='rounded-lg'/>
-            <Image src={assets.twitter_icon} width={50} className='rounded-lg' />
-            <Image src={assets.instagram_icon} width={50} className='rounded-lg'/>
+            <Image alt='' src={assets.facebook_icon} width={50} className='rounded-lg'/>
+            <Image alt='' src={assets.twitter_icon} width={50} className='rounded-lg' />
+            <Image alt='' src={assets.instagram_icon} width={50} className='rounded-lg'/>
         </div>
     </div>
   )

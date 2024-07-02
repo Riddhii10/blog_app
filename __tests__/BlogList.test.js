@@ -1,25 +1,25 @@
 import React from 'react';
 
 import { render, screen, fireEvent } from '@testing-library/react';
-import Header from '@/Components/Header';
+import BlogList from '@/Components/BlogList';
 
 import axios from 'axios'; // Import Axios
 
 // Mock Axios post function
 jest.mock('axios');
 
-describe('Header Component', () => {
+describe('BlogList Component', () => {
   beforeEach(() => {
     jest.clearAllMocks(); // Reset mock function call counts before each test
   });
 
   it('renders header elements correctly', () => {
-    render(<Header />);
+    render(<BlogList />);
 
     // Assert presence of elements
-    expect(screen.getByText('Get started')).toBeInTheDocument();
-    expect(screen.getByText('Lastest Travel Blogs')).toBeInTheDocument();
-    expect(screen.getByPlaceholderText('Enter the email.')).toBeInTheDocument();
-    expect(screen.getByText('Subscribe')).toBeInTheDocument();
+    expect(screen.getByText('All')).toBeInTheDocument();
+    expect(screen.getByText('Technology')).toBeInTheDocument();
+    expect(screen.getByPlaceholderText('Lifestyle')).toBeInTheDocument();
+    expect(screen.getByText('StartUp')).toBeInTheDocument();
   });
 });

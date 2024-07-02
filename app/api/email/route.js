@@ -11,7 +11,7 @@ export async function POST(request){
         email:`${formData.get('email')}`,
     }
     await EmailModel.create(emailData);
-    return NextResponse.json({success:true,msg:"Subscription Sucsessfull."})
+    return NextResponse.json({success:true,msg:"Subscription Successful."})
 }
 export async function GET(request){
     const emails=await EmailModel.find({})
